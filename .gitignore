@@ -5,6 +5,7 @@
 log/
 Edfmap.ini
 *.wsp
+*.wsw
 *.wsf
 *.log
 *.erf
