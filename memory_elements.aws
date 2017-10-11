@@ -10,3 +10,6 @@ order=1
 macro=
 [Expand]
 memory_elements=1
+primitives=0
+[Settings]
+Active=memory_elements
