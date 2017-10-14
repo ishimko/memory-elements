@@ -80,6 +80,8 @@ task 5.7=1
 task 5.7\test-bench=1
 task 5.8=1
 task 5.8\test-bench=1
+task 5.9=1
+task 5.9\test-bench=1
 
 [Files]
 task 1/bistable_element.vhd=-1
@@ -109,6 +111,9 @@ task 5.7\test-bench/rsff_TB_runtest.do=-1
 task 5.8/JKFF.vhd=-1
 task 5.8\test-bench/jkff_TB.vhd=-1
 task 5.8\test-bench/jkff_TB_runtest.do=-1
+task 5.9/TFF.vhd=-1
+task 5.9\test-bench/tff_TB.vhd=-1
+task 5.9\test-bench/tff_TB_runtest.do=-1
 
 [Files.Data]
 .\src\task 1\bistable_element.vhd=VHDL Source Code
@@ -138,4 +143,7 @@ task 5.8\test-bench/jkff_TB_runtest.do=-1
 .\src\task 5.8\JKFF.vhd=VHDL Source Code
 .\src\task 5.8\test-bench\jkff_TB.vhd=VHDL Source Code
 .\src\task 5.8\test-bench\jkff_TB_runtest.do=Macro
+.\src\task 5.9\TFF.vhd=VHDL Source Code
+.\src\task 5.9\test-bench\tff_TB.vhd=VHDL Source Code
+.\src\task 5.9\test-bench\tff_TB_runtest.do=Macro
 

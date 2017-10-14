@@ -10,7 +10,7 @@ entity RSFF is
 		);
 end RSFF;
 
-architecture RSFF of RSFF is
+architecture beh of RSFF is
 	signal result: STD_LOGIC;
 begin
 	process(R, S, CLK)
@@ -27,4 +27,4 @@ begin
 	end process; 
 	
 	Q <= result;
-end RSFF;
+end beh;

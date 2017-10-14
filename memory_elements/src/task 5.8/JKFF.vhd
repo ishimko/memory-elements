@@ -10,7 +10,7 @@ entity JKFF is
 		);
 end JKFF;
 
-architecture JKFF of JKFF is
+architecture beh of JKFF is
 	signal q_t: STD_LOGIC;
 begin
 	process(J, K, CLK)
@@ -27,4 +27,4 @@ begin
 	end process; 
 	
 	Q <= q_t;
-end JKFF;
+end beh;
