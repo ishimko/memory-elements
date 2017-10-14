@@ -24,7 +24,10 @@ architecture TB_ARCHITECTURE of FDCPE_TB is
 	
 	signal Q : STD_LOGIC;	
 	
-	constant clock_period : time := 10 ns;
+	constant clock : integer := 10;
+	constant clock_period : time := clock * 1 ns;
+	constant preset_period : time := ((clock * 20) - (clock / 2)) * 1 ns;
+	constant clr_period : time := ((clock * 40) - (clock / 2)) * 1 ns;
 begin
 	UUT : FDCPE
 	port map (
@@ -39,8 +42,8 @@ begin
 	CLK <= not CLK after clock_period;
 	D <= not D after clock_period * 4;
 	E <= not E after clock_period * 8;
-	PRE <= not PRE after clock_period * 16;
-	CLR <= not CLR after clock_period * 32;
+	PRE <= '1' after preset_period when PRE = '0' else '0' after clock_period / 2;
+	CLR <= '1' after clr_period when CLR = '0' else '0' after clock_period / 2;
 	
 end TB_ARCHITECTURE;
 
