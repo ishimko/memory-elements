@@ -8,12 +8,15 @@ entity D_FlipFlop is
 		);
 end D_FlipFlop;
 
-architecture beh of D_FlipFlop is	
+architecture beh of D_FlipFlop is		   
+	signal s : std_logic;
 begin
 	process(CLK)
 	begin		
 		if rising_edge(CLK) then
-			Q <= D;
+			s <= D;
 		end if;
 	end process;	
+	
+	Q <= s;
 end beh;
