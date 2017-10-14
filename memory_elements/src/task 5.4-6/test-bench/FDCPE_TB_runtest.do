@@ -1,6 +1,6 @@
 SetActiveLib -work
-comp -include "$dsn\src\task 5.2\FDCPE.vhd" 
-comp -include "$dsn\src\task 5.2\test-bench\FDCPE_TB.vhd" 
+comp -include "$dsn\src\task 5.4-6\FDCPE.vhd" 
+comp -include "$dsn\src\task 5.4-6\test-bench\FDCPE_TB.vhd" 
 asim +access +r FDCPE_TB
 wave 
 wave -noreg CLR
