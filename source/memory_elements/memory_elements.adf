@@ -41,7 +41,7 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=fdcpe_tb|TB_ARCHITECTURE|0 jkff_tb|TB_ARCHITECTURE|0 rsff_tb|TB_ARCHITECTURE|0 tff_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=fdcpe_tb|TB_ARCHITECTURE|0 tff_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
