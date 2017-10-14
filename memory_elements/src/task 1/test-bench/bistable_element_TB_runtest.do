@@ -1,7 +1,7 @@
 SetActiveLib -work
 comp -include "$dsn\src\task 1\bistable_element.vhd" 
 comp -include "$dsn\src\task 1\test-bench\bistable_element_TB.vhd" 
-asim +access +r TESTBENCH_FOR_bistableelement 
+asim +access +r bistableelement_TB
 
 wave 
 
