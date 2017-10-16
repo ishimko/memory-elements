@@ -29,14 +29,22 @@ begin
 	nQ <= t1;
 end struct;
 
-architecture beh of D_Latch is 	
-begin	
-	Q   <= D;
-	nQ  <= not D;
+architecture beh of D_Latch is
+	signal t1, t2, inversed: std_logic;
+begin					   
+	inversed <= not D;
+	t2 <= D nor t1;
+	t1 <= inversed nor t2;
+	nQ <= t1;
+	Q <= t2;
 end beh;	   
 
-architecture param of D_Latch is	
-begin	
-	Q   <= D after 2 ns;
-	nQ  <= not D after 3 ns;
+architecture param of D_Latch is
+	signal t1, t2, inversed: std_logic;
+begin
+	inversed <= not D;
+	t2 <= D nor t1 after 3 ns;
+	t1 <= inversed nor t2 after 3 ns;
+	Q <= transport t2 after 2 ns;
+	nQ <= transport t1 after 3 ns;	
 end param;

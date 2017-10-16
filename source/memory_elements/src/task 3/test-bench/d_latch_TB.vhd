@@ -45,7 +45,7 @@ begin
 		nQ => nQ_param
 		); 
 	
-	D <= not D after 10 ns;	
+	D <= not D after 100 ns;	
 	
 end TB_ARCHITECTURE;
 
